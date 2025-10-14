@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-address-book"></i>
+                    <h1>Agenda de Contactos</h1>
+                </div>
+                <p>Implementada con Listas Enlazadas</p>
+            </div>
+        </header>
+
+        <div class="app-container">
+            <div class="form-section">
+                <div class="section-header">
+                    <i class="fas fa-user-plus"></i>
+                    <h2>Gestión de Contactos</h2>
+                </div>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" placeholder="Número de teléfono" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Correo electrónico">
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" id="add-btn" class="btn-primary">
+                            <i class="fas fa-plus"></i> Añadir Contacto
+                        </button>
+                        <button type="button" id="update-btn" class="btn-warning" style="display:none">
+                            <i class="fas fa-save"></i> Actualizar Contacto
+                        </button>
+                        <button type="button" id="cancel-btn" class="btn-secondary" style="display:none">
+                            <i class="fas fa-times"></i> Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="search-section">
+                <div class="section-header">
+                    <i class="fas fa-search"></i>
+                    <h2>Buscar Contacto</h2>
+                </div>
+                <div class="search-container">
+                    <div class="input-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Buscar por nombre o teléfono...">
+                    </div>
+                    <button id="search-btn" class="btn-primary">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+                <div class="search-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="search-similar" checked>
+                        <span class="checkmark"></span>
+                        Incluir nombres similares
+                    </label>
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+
+            <div class="contacts-section">
+                <div class="section-header">
+                    <i class="fas fa-list"></i>
+                    <h2>Lista de Contactos</h2>
+                    <span id="contact-count" class="badge">0</span>
+                </div>
+                <div id="contacts-list" class="contacts-list"></div>
+                <div class="list-info">
+                    <div class="list-visualization">
+                        <h3>Estructura de Lista Enlazada</h3>
+                        <div id="linked-list-viz"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
