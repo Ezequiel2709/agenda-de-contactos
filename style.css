@@ -1,14 +1,14 @@
 :root {
-    --primary: #6a11cb;
+    --primary: #23743e;
     --primary-light: #8a2be2;
-    --secondary: #233f70;
+    --secondary: #234670;
     --success: #2ecc71;
-    --warning: #f39c12;
-    --danger: #e74c3c;
+    --warning: #353740;
+    --danger: #7e3b33;
     --dark: #2c3e50;
     --light: #f5f7fa;
-    --gray: #7f8c8d;
-    --white: #d47b8a;
+    --gray: #4c6364;
+    --white: #cc7a23;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
 }
@@ -202,7 +202,7 @@ button {
 }
 
 .btn-warning:hover {
-    background: #e67e22;
+    background: #1c1108;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
 }
@@ -213,7 +213,7 @@ button {
 }
 
 .btn-secondary:hover {
-    background: #6c757d;
+    background: #1c2227;
     transform: translateY(-2px);
 }
 
@@ -223,7 +223,7 @@ button {
 }
 
 .btn-danger:hover {
-    background: #c0392b;
+    background: #45100a;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
 }
